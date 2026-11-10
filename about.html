@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Sheba | About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 48px;
+    }
+    @media (max-width: 700px) { .about-grid { grid-template-columns: 1fr; } }
+
+    .about-text h2 {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--red-deep);
+      margin-bottom: 16px;
+    }
+    .about-text p {
+      color: var(--gray);
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+    .about-text p + p { margin-top: 14px; }
+
+    .about-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+      border-top: 4px solid var(--red);
+    }
+
+    .about-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--red);
+      margin-bottom: 20px;
+    }
+
+    .goal-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #ede7de;
+    }
+    .goal-item:last-child { border-bottom: none; }
+    .goal-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .goal-item p { color: var(--gray); font-size: 0.95rem; line-height: 1.6; }
+    .goal-item strong { color: var(--dark); display: block; margin-bottom: 3px; }
+
+    .team-section { margin-top: 64px; }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .team-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .team-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--red-dark), var(--red));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem;
+      margin: 0 auto 16px;
+    }
+    .team-card h4 {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--red-deep);
+      margin-bottom: 4px;
+    }
+    .team-card span { font-size: 0.85rem; color: var(--gray); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">🇾🇪 Yemen Tourism Blog</div>
+  <h1>Cyber Sheba</h1>
+  <p class="subtitle">Discover the beauty of Yemen and its ancient heritage</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About Us</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="Blog announcement.html">Blog</a>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>About Cyber Sheba</h1>
+  <p>A digital project reviving Yemeni heritage through modern technology</p>
+</section>
+
+<div class="container">
+
+  <!-- About grid -->
+  <div class="about-grid">
+    <div class="about-text">
+      <h2>Who Are We?</h2>
+      <p>
+        Cyber Sheba is a digital project aimed at highlighting the hidden beauty of Yemen, presenting its ancient heritage and stunning tourist landmarks in a modern and attractive style worthy of this great human legacy.
+      </p>
+      <p>
+        We believe that Yemen holds a wealth of beauty and civilization that the world deserves to know; from the Old City of Sana'a to the magical Socotra Island, passing through Shibam Hadramout and the green mountains of Taiz.
+      </p>
+      <p>
+        This project is an intersection of passion for heritage and technical skill, where code and design meet to serve a noble cause: painting a bright and vivid image of "Happy Yemen."
+      </p>
+      <div style="margin-top:28px;">
+        <a href="destinations.
+        html" class="btn btn-primary">Explore Places</a>
+      </div>
+    </div>
+
+    <div class="about-card">
+      <h3>Project Goals</h3>
+      <div class="goal-item">
+        <span class="goal-icon">🌍</span>
+        <div>
+          <strong>Promote Yemeni Tourism</strong>
+          <p>Highlighting the exceptional tourist destinations that Yemen possesses.</p>
+        </div>
+      </div>
+      <div class="goal-item">
+        <span class="goal-icon">🏛️</span>
+        <div>
+          <strong>Documenting Heritage</strong>
+          <p>Preserving the unique cultural and architectural legacy for future generations.</p>
+        </div>
+      </div>
+      <div class="goal-item">
+        <span class="goal-icon">💻</span>
+        <div>
+          <strong>Applying Programming Skills</strong>
+          <p>Using modern web technologies to create an excellent visual experience.</p>
+        </div>
+      </div>
+      <div class="goal-item">
+        <span class="goal-icon">✨</span>
+        <div>
+          <strong>Inspiring the World</strong>
+          <p>Presenting a positive and bright image of Yemen and its people.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Team -->
+  <div class="team-section">
+    <div class="section-label"><span>Our Team</span></div>
+    <h2 class="section-title">Who Built This Website</h2>
+    <div class="section-line"></div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👩‍💻</div>
+        <h4>Mona</h4>
+        <span>Web Developer</span>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍🎨</div>
+        <h4>Haneen</h4>
+        <span>Web Developer</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>© Cyber Sheba 2026</strong> · All Rights Reserved
+</footer>
+
+</body>
+</html>

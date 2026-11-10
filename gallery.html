@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel Destinations in Yemen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    font-family: Arial;
+    padding: 20px;
+
+    /* خلفية علم اليمن */
+    background: linear-gradient(
+        to bottom,
+        #ce1126 0%,     /* أحمر */
+        #ce1126 33%,
+        #ffffff 33%,   /* أبيض */
+        #ffffff 66%,
+        #000000 66%,   /* أسود */
+        #000000 100%
+    );
+}
+
+.container {
+    display: grid;
+    /* التعديل هنا لجعلها 3 أعمدة ثابتة في الشاشات الكبيرة لتظهر 3 فوق و3 تحت */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+}
+
+/* لجعل الترتيب يتغير في الشاشات الصغيرة (الجوال) */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #333;
+}
+</style>
+
+</head>
+
+<body>
+  <header>
+  <div class="header-badge">🇾🇪 Yemen Tourism Blog</div>
+  <h1>Cyber Sheba</h1>
+  <p class="subtitle">Discover the beauty of Yemen and its ancient heritage</p>
+</header>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="Blog announcement.html">Blog</a>
+</nav>
+
+
+<h2 style="color:white; text-align:center;">Top Travel Destinations in Yemen 🇾🇪</h2>
+
+<div class="container">
+
+    <div class="card">
+        <!-- تم تعديل الحرف الأول إلى l صغير ليطابق ملفك -->
+        <img src="lbb_001.jpg">
+        <h3>Ibb Greenery</h3>
+        <p>
+        Known as the "Green Province," Ibb offers breathtaking landscapes and mountains 
+        covered in green during the rainy season.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="hadramaut 001.jpg">
+        <h3>Hadramaut Heritage</h3>
+        <p>
+        Discover the ancient architecture and the deep history of the desert valleys 
+        and the unique mud-brick buildings of Hadramaut.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="sana,a000.jpg">
+        <h3>Sana’a Old City</h3>
+        <p>
+        A UNESCO World Heritage site featuring unique decorated houses and traditional 
+        markets that date back thousands of years.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="socotra 001.jpg">
+        <h3>Socotra Island</h3>
+        <p>
+        Explore the most alien-looking place on Earth with its rare Dragon Blood trees 
+        and pristine white sand beaches.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="bab_alyaman 000.jpg">
+        <h3>Bab al-Yaman</h3>
+        <p>
+        The historic main gate to the old city of Sana'a, standing as a symbol 
+        of Yemeni strength and ancient architectural art.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="marib_dam 000.jpg">
+        <h3>Great Marib Dam</h3>
+        <p>
+        A masterpiece of ancient engineering and a witness to the greatness 
+        of the Sabaean kingdom and Yemen's hydraulic history.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

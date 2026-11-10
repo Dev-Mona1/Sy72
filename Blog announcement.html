@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yemen Adventures</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav {
+    background: #1a0a0d; 
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    border-bottom: 3px solid #ce1126;
+}
+
+.nav-cta {
+    background: #ce1126;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.nav-logo {
+    flex-grow: 1;
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-logo span {
+    color: #ff3b4d;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    text-align: center;
+    padding: 80px 20px;
+    background: radial-gradient(
+        circle at top left,
+        #ce1126 0%,
+        #9e0e1c 30%,
+        #5a0c14 60%,
+        #2a0a0e 85%,
+        #140607 100%
+    );
+}
+
+/* TEXT */
+.hero-eyebrow {
+    color: #ffd6da;
+    letter-spacing: 6px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.9;
+}
+
+.hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    color: #ff3b4d;
+    font-size: 42px;
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
+
+/* FEATURES */
+.features {
+    max-width: 330px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feat {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 18px;
+    border-radius: 10px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* BUTTONS */
+.btn-main {
+    background: #ff2e43;
+    color: white;
+    display: block;
+    width: 260px;
+    padding: 16px;
+    margin: 10px auto;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #c9152c;
+}
+
+.btn-sec {
+    border: 2px solid rgba(255,255,255,0.8);
+    color: white;
+    display: block;
+    width: 260px;
+    padding: 16px;
+    margin: 10px auto;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-sec:hover {
+    background: white;
+    color: #140607;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html" class="nav-cta">EXPLORE NOW</a>
+    <a href="index.html" class="nav-logo">Yemen<span>Adventures</span></a>
+</nav>
+
+<section class="hero">
+    <div class="hero-eyebrow">DISCOVER THE UNKNOWN</div>
+
+    <h1 class="hero-title">YEMEN</h1>
+    <div class="hero-subtitle">ADVENTURES</div>
+
+    <div class="features">
+        <div class="feat">🏛 UNESCO Heritage Sites</div>
+        <div class="feat">🏔 Stunning Landscapes</div>
+        <div class="feat">🤝 Authentic Culture</div>
+        <div class="feat">🧭 Travel Tips</div>
+    </div>
+
+    <div class="hero-actions">
+        <a href="index.html" class="btn-main">🚀 START EXPLORING</a>
+        
+        <a href="destinations.html" class="btn-sec">📸 VIEW DESTINATIONS</a>
+    </div>
+</section>
+
+</body>
+</html>

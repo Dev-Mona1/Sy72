@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Sheba | Destinations</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .dest-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+    .dest-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .dest-card-header {
+      background: linear-gradient(135deg, var(--red-deep), var(--red));
+      padding: 28px 24px 22px;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .dest-icon { font-size: 2.2rem; }
+    .dest-card-header h2 {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .dest-card-header span {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 1px;
+    }
+
+    .dest-card-body {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .dest-card-body p {
+      color: var(--gray);
+      font-size: 0.97rem;
+      line-height: 1.7;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .tag {
+      background: #f4ede4;
+      color: var(--red-dark);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 40px;
+      border: 1px solid #e5d5c5;
+    }
+
+    .dest-cta {
+      padding: 0 24px 24px;
+    }
+
+    /* UNESCO Badge */
+    .unesco-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold);
+      background: rgba(201,168,76,0.12);
+      border: 1px solid rgba(201,168,76,0.4);
+      padding: 4px 12px;
+      border-radius: 40px;
+    }
+
+    .intro-box {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      border-top: 4px solid var(--gold);
+      margin-bottom: 0;
+    }
+    .intro-box p { color: var(--gray); line-height: 1.75; font-size: 1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-badge">🇾🇪 Yemen Tourism Blog</div>
+  <h1>Cyber Sheba</h1>
+  <p class="subtitle">Discover the beauty of Yemen and its ancient heritage</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="destinations.html" class="active">Destinations</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="Blog announcement.html">Blog</a>
+</nav>
+
+<section class="page-hero">
+  <h1>The Most Beautiful Places in Yemen</h1>
+  <p>Discover extraordinary destinations that showcase Yemen's unparalleled heritage and nature</p>
+</section>
+
+<div class="container">
+
+  <div class="intro-box">
+    <p>Yemen is home to some of the world's most breathtaking destinations — from ancient skyscraper cities to alien-like islands. Each place tells a story spanning thousands of years of civilization and natural wonder.</p>
+  </div>
+
+  <div class="dest-grid">
+
+    <div class="dest-card">
+      <div class="dest-card-header">
+        <span class="dest-icon">🏛</span>
+        <div>
+          <h2>Old Sana'a</h2>
+          <span>CAPITAL · UNESCO SITE</span>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <span class="unesco-badge">🏅 UNESCO World Heritage</span>
+        <p>One of the world's oldest continuously inhabited cities. Famous for its unique tower-house architecture adorned with geometric alabaster windows called "qamariyyas" — a sight unlike anywhere else on Earth.</p>
+        <div class="tags">
+          <span class="tag">Ancient Architecture</span>
+          <span class="tag">UNESCO</span>
+          <span class="tag">History</span>
+          <span class="tag">Culture</span>
+        </div>
+      </div>
+      <div class="dest-cta">
+        <a href="gallery.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Photos ›</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-header">
+        <span class="dest-icon">🏙</span>
+        <div>
+          <h2>Shibam Hadramaut</h2>
+          <span>HADHRAMAUT · UNESCO SITE</span>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <span class="unesco-badge">🏅 UNESCO World Heritage</span>
+        <p>Known as the "Manhattan of the Desert" — a 16th-century city of towering mud-brick skyscrapers rising from the valley floor. An extraordinary feat of pre-modern engineering and human ingenuity.</p>
+        <div class="tags">
+          <span class="tag">Mud Architecture</span>
+          <span class="tag">UNESCO</span>
+          <span class="tag">Desert</span>
+          <span class="tag">Ancient</span>
+        </div>
+      </div>
+      <div class="dest-cta">
+        <a href="gallery.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Photos ›</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-header">
+        <span class="dest-icon">🏝</span>
+        <div>
+          <h2>Socotra Island</h2>
+          <span>ARABIAN SEA · UNESCO SITE</span>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <span class="unesco-badge">🏅 UNESCO World Heritage</span>
+        <p>Called the "Galápagos of the Indian Ocean" — Socotra is home to over 700 species found nowhere else on Earth, including the iconic Dragon Blood Tree with its umbrella-shaped canopy and crimson sap.</p>
+        <div class="tags">
+          <span class="tag">Biodiversity</span>
+          <span class="tag">UNESCO</span>
+          <span class="tag">Rare Trees</span>
+          <span class="tag">Nature</span>
+        </div>
+      </div>
+      <div class="dest-cta">
+        <a href="gallery.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Photos ›</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-header">
+        <span class="dest-icon">⛰</span>
+        <div>
+          <h2>Mountainous Ibb</h2>
+          <span>SOUTHWESTERN YEMEN</span>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p>Yemen's greenest governorate — nicknamed the "Green Province." Ibb's fertile mountains, dramatic terraced fields, cool climate, and cascading waterfalls offer a lush contrast to Yemen's desert landscapes.</p>
+        <div class="tags">
+          <span class="tag">Mountains</span>
+          <span class="tag">Waterfalls</span>
+          <span class="tag">Green</span>
+          <span class="tag">Scenic</span>
+        </div>
+      </div>
+      <div class="dest-cta">
+        <a href="gallery.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Photos ›</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-header">
+        <span class="dest-icon">🚪</span>
+        <div>
+          <h2>Bab al-Yemen</h2>
+          <span>SANA'A · HISTORIC GATE</span>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p>The iconic gateway to the Old City of Sana'a. Standing for over a millennium, it serves as a grand entrance to a world of bustling traditional markets (Souqs) and mesmerizing historic architecture.</p>
+        <div class="tags">
+          <span class="tag">Heritage</span>
+          <span class="tag">Old City</span>
+          <span class="tag">Souqs</span>
+          <span class="tag">Iconic Gate</span>
+        </div>
+      </div>
+      <div class="dest-cta">
+        <a href="gallery.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Photos ›</a>
+      </div>
+    </div>
+
+    <div class="dest-card">
+      <div class="dest-card-header">
+        <span class="dest-icon">💧</span>
+        <div>
+          <h2>Marib Dam</h2>
+          <span>MARIB · ANCIENT ENGINEERING</span>
+        </div>
+      </div>
+      <div class="dest-card-body">
+        <p>A masterpiece of ancient engineering. The Great Dam of Marib dates back to the 8th century BC, once supporting the legendary Kingdom of Saba and symbolizing Yemen's agricultural ingenuity.</p>
+        <div class="tags">
+          <span class="tag">Saba Kingdom</span>
+          <span class="tag">Engineering</span>
+          <span class="tag">Ancient Ruins</span>
+          <span class="tag">History</span>
+        </div>
+      </div>
+      <div class="dest-cta">
+        <a href="gallery.html" class="btn btn-outline" style="width:100%;justify-content:center;">See Photos ›</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <strong>© Cyber Sheba 2026</strong> · All rights reserved
+</footer>
+
+</body>
+</html>
