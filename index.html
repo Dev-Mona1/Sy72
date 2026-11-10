@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Sheba | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero specific */
+    .hero {
+      min-height: 550px;
+      /* تم إضافة الصورة هنا مع طبقة تعتيم (شفافية) لبروز النص */
+      background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%),
+        url('too000.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      position: relative;
+      color: #fff;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 60px;
+      background: var(--cream);
+      clip-path: ellipse(60% 100% at 50% 100%);
+    }
+    .hero-badge {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(201,168,76,0.2);
+      border: 1px solid rgba(201,168,76,0.5);
+      padding: 6px 18px;
+      border-radius: 40px;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      margin-bottom: 4px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.9);
+      max-width: 600px;
+      line-height: 1.6;
+      margin-top: 18px;
+      margin-bottom: 32px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .feature-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      border-bottom: 3px solid transparent;
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .feature-item:hover {
+      border-bottom-color: var(--red);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .feature-icon { font-size: 2.4rem; margin-bottom: 14px; }
+    .feature-item h3 {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--red-deep);
+      margin-bottom: 8px;
+    }
+    .feature-item p { font-size: 0.9rem; color: var(--gray); line-height: 1.6; }
+
+    /* Intro section */
+    .intro-text {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .intro-text p {
+      font-size: 1.05rem;
+      color: var(--gray);
+      line-height: 1.8;
+    }
+    .intro-text p + p { margin-top: 16px; }
+  </style>
+</head>
+<body>
+    <header>
+  <div class="header-badge">🇾🇪 Yemen Tourism Blog</div>
+  <h1>Cyber Sheba</h1>
+  <p class="subtitle">Discover the beauty of Yemen and its ancient heritage</p>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">About</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <a href="Blog announcement.html">Blog</a>
+</nav>
+
+<section class="hero">
+  <span class="hero-badge">Explore the Ancient World</span>
+  <h1>Happy <em>Yemen</em></h1>
+  <p>A modern tourism journey through Yemen's most stunning landscapes, ancient cities, and rich cultural heritage.</p>
+  <div class="hero-btns">
+    <a href="destinations.html" class="btn btn-primary">Explore Destinations ›</a>
+    <a href="gallery.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.6);color:#fff;">View Gallery</a>
+  </div>
+</section>
+
+<div class="container">
+  <div class="section-label"><span>Welcome</span></div>
+  <h2 class="section-title">Redefining Yemeni Beauty</h2>
+  <div class="section-line"></div>
+
+  <div class="intro-text" style="margin-top:28px;">
+    <p>Here, we redefine Yemeni beauty through the language of code and design, taking you on a visual journey that transcends the boundaries of time and space.</p>
+    <p>This is a tourism blog that showcases "Happy Yemen" in a modern and attractive way — celebrating its UNESCO heritage, breathtaking nature, and warm, authentic culture.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature-item">
+      <div class="feature-icon">🏛</div>
+      <h3>Ancient Cities</h3>
+      <p>Explore UNESCO World Heritage sites like Old Sana'a and Shibam Hadramaut.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🏝</div>
+      <h3>Unique Nature</h3>
+      <p>Discover Socotra Island's otherworldly landscapes and rare Dragon Blood Trees.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">🤝</div>
+      <h3>Rich Culture</h3>
+      <p>Experience authentic hospitality and centuries-old traditions alive today.</p>
+    </div>
+    <div class="feature-item">
+      <div class="feature-icon">📸</div>
+      <h3>Visual Stories</h3>
+      <p>A curated gallery of Yemen's most captivating and unforgettable scenery.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <strong>© Cyber Sheba 2026</strong> · All rights reserved
+</footer>
+
+</body>
+</html>
